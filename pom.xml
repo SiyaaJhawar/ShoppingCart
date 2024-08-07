@@ -138,8 +138,19 @@
 	</dependency>
 	
 	</dependencies>
-	<build>
-		<finalName>shopieasy</finalName>
-	</build>
-	<artifactId>shopieasy</artifactId>
+	 <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.8.1</version> <!-- Use a recent version -->
+                <configuration>
+                    <source>1.8</source> <!-- or another version like 11 if needed -->
+                    <target>1.8</target> <!-- or another version like 11 if needed -->
+                </configuration>
+            </plugin>
+        </plugins>
+        <finalName>shopieasy</finalName>
+    </build>
 </project>
+	
